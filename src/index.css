@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Outfit:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&family=Manrope:wght@400;600;700&family=DM+Serif+Display&family=Cabinet+Grotesk:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-primary: #006994;
+  --color-secondary: #00A8E8;
+  --color-accent: #00C9FF;
+  --color-background: #F0F8FF;
+  --color-text: #003459;
+  --color-hover: #007EA7;
+  --blob-1: rgba(0,122,204,0.14);
+  --blob-2: rgba(0,200,255,0.06);
+  --page-background: radial-gradient(800px 600px at 8% 20%, var(--blob-1), transparent 20%), radial-gradient(600px 420px at 88% 24%, var(--blob-2), transparent 18%), linear-gradient(180deg, var(--color-background) 0%, var(--color-background) 50%, var(--color-background) 100%);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: var(--color-text);
+  background: var(--page-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+  font-weight: 50;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-dmserif {
+  font-family: "DM Serif Display", serif;
+}
+
+.font-spacegrotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 100;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+  font-weight: 100;
+}
+
+.font-cabinet {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+h1, h2 {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+h3, h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.65;
+}
+
+.highlight {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-primary);
+}
+
+.callout {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.modern {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, p, a {
+  text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 768px) {
+  .leading-tight {
+    line-height: 1.02;
+  }
+}
