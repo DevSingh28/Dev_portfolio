@@ -28,6 +28,7 @@ import {
   SiLinux,
   SiVercel,
   SiGithub,
+  SiFramer,
 } from "react-icons/si";
 
 export default function SkillsSection() {
@@ -84,6 +85,8 @@ export default function SkillsSection() {
     { icon: <SiPostgresql color="#336791" />, name: "PostgreSQL" },
 
     { icon: <SiTailwindcss color="#38bdf8" />, name: "Tailwind CSS" },
+    { icon: <SiFramer color="#0055FF" />, name: "Framer Motion" },
+
     { icon: <FaHtml5 color="#e34f26" />, name: "HTML5" },
     { icon: <FaCss3Alt color="#1572b6" />, name: "CSS3" },
     { icon: <FaGitAlt color="#f1502f" />, name: "Git" },
